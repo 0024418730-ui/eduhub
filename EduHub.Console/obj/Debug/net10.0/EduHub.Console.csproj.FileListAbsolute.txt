@@ -1,0 +1,14 @@
+C:\Users\HP\EduHub\EduHub.Console\bin\Debug\net10.0\EduHub.Console.exe
+C:\Users\HP\EduHub\EduHub.Console\bin\Debug\net10.0\EduHub.Console.deps.json
+C:\Users\HP\EduHub\EduHub.Console\bin\Debug\net10.0\EduHub.Console.runtimeconfig.json
+C:\Users\HP\EduHub\EduHub.Console\bin\Debug\net10.0\EduHub.Console.dll
+C:\Users\HP\EduHub\EduHub.Console\bin\Debug\net10.0\EduHub.Console.pdb
+C:\Users\HP\EduHub\EduHub.Console\obj\Debug\net10.0\EduHub.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\EduHub\EduHub.Console\obj\Debug\net10.0\EduHub.Console.AssemblyInfoInputs.cache
+C:\Users\HP\EduHub\EduHub.Console\obj\Debug\net10.0\EduHub.Console.AssemblyInfo.cs
+C:\Users\HP\EduHub\EduHub.Console\obj\Debug\net10.0\EduHub.Console.csproj.CoreCompileInputs.cache
+C:\Users\HP\EduHub\EduHub.Console\obj\Debug\net10.0\EduHub.Console.dll
+C:\Users\HP\EduHub\EduHub.Console\obj\Debug\net10.0\refint\EduHub.Console.dll
+C:\Users\HP\EduHub\EduHub.Console\obj\Debug\net10.0\EduHub.Console.pdb
+C:\Users\HP\EduHub\EduHub.Console\obj\Debug\net10.0\EduHub.Console.genruntimeconfig.cache
+C:\Users\HP\EduHub\EduHub.Console\obj\Debug\net10.0\ref\EduHub.Console.dll
