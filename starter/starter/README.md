@@ -1,44 +1,29 @@
-# Ch01 — Phân tích yêu cầu và Domain Modeling EduHub (starter)
+# Ch01 — Phân tích yêu cầu và Domain Modeling EduHub
 
-Bài tập chương 1 của IN4211, chấm theo HĐ1.3 (bài tập chương). Liên quan CLO1, CLO4, CLO5.
-Đề bài đầy đủ và rubric: `../de-bai.html`, `../rubric.html`.
+Bài tập Chương 1 môn **IN4211 - Phát triển phần mềm hướng đối tượng** (EduHub Project).
+**Sinh viên thực hiện:** Đỗ Nguyễn Mai Trang - MSSV: 002441730
 
-## Cần làm
+---
 
-1. `docs/user-stories.md`: viết ít nhất 5 User Story, mỗi story có ít nhất 2 tiêu chí nghiệm thu, đủ 3 vai trò.
-2. `docs/class-diagram.md`: vẽ sơ đồ lớp sơ bộ của 5 class (thuộc tính, khoá ngoại, bội số quan hệ).
-3. `Ch01.Console/Domain/`: hoàn thiện 5 class `Member`, `Club`, `Event`, `Registration`, `CheckIn`
-   theo các đoạn `// TODO` (private set, constructor private, factory `Create(...)`, ít nhất một method hành vi).
-4. `Ch01.Console/Program.cs`: viết demo luồng tạo CLB, thêm thành viên, tạo sự kiện, đăng ký, xác nhận, check-in, báo cáo tham dự.
-5. Nộp bài bằng Pull Request (xem mục Nộp bài).
+## Nội dung đã hoàn thành
 
-Starter là bộ khung tuỳ chọn: bạn có thể tự tạo solution từ đầu với cấu trúc `Domain/` như đề bài.
+1. **`docs/user-stories.md`**: Đã hoàn thành 6 User Stories cho 3 nhóm vai trò (Sinh viên, Ban CLB, Admin) kèm tiêu chí nghiệm thu dạng Given/When/Then.
+2. **`docs/class-diagram.md`**: Thiết kế Sơ đồ lớp (Class Diagram) bằng cú pháp Mermaid mô tả 5 Domain Entities, các thuộc tính, phương thức, khóa chính/khóa ngoại và bội số quan hệ.
+3. **`Ch01.Console/Domain/`**: Cài đặt 5 C# Domain Classes (`Member`, `Club`, `Event`, `Registration`, `CheckIn`) áp dụng đầy đủ tính Encapsulation (`private set`), Static Factory Method `Create(...)`, Private Constructor, XML Doc Comments và các phương thức xử lý nghiệp vụ.
+4. **`Ch01.Console/Program.cs`**: Xây dựng Console App Demo chạy luồng nghiệp vụ 7 bước chuẩn: Tạo CLB $\rightarrow$ Thêm thành viên $\rightarrow$ Tạo sự kiện $\rightarrow$ Đăng ký & Xác nhận $\rightarrow$ Check-in QR $\rightarrow$ In Báo cáo tham dự $\rightarrow$ Xử lý ngoại lệ nghiệp vụ (`InvalidOperationException`).
 
-## Chạy và build
+---
 
-```bash
-dotnet build Ch01.Console.sln
-dotnet run --project Ch01.Console
-```
+## Hướng dẫn Build và Chạy dự án
 
-Starter build được ngay khi chưa làm (các class còn trống). Khi hoàn thành, chương trình phải in:
-thông tin thành viên, thông tin CLB, thông tin sự kiện (số đăng ký / sức chứa), thông tin check-in và báo cáo tham dự.
+Yêu cầu môi trường: **.NET 10 SDK** trở lên.
 
-## Nộp bài
+Mở Terminal tại thư mục gốc dự án và chạy các lệnh sau:
 
 ```bash
-git switch -c ch01/<MSSV>
-git add .
-git commit -m "feat(domain): add Member and Club"
-git push -u origin ch01/<MSSV>
+# Build dự án
+dotnet build starter/starter/Ch01.Console.sln
+
+# Chạy chương trình Console Demo
+dotnet run --project starter/starter/Ch01.Console
 ```
-
-Mở Pull Request về `main`, tag giảng viên, mô tả đủ what, why, how to test.
-Commit theo Conventional Commits (`type(scope): subject`), ít nhất 3 commit.
-
-## Tài liệu tham khảo
-
-- [C# classes](https://learn.microsoft.com/dotnet/csharp/fundamentals/types/classes)
-- [C# properties](https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/properties)
-- [C# constructors](https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/constructors)
-- [Conventional Commits](https://www.conventionalcommits.org/vi/v1.0.0/)
